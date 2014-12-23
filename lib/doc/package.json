@@ -1,0 +1,39 @@
+{
+  "name": "docooment-db",
+  "description": "DocumentDb ORM",
+  "version": "0.0.1",
+  "author": {
+    "name": "Gianluca Pengo",
+    "email": "gianluca.pengo@gmail.com"
+  },
+  "keywords": [
+    "DocumentDb",
+    "document",
+    "model",
+    "schema",
+    "database",
+    "odm",
+    "data",
+    "datastore",
+    "query",
+    "nosql",
+    "orm",
+    "db",
+    "azure"
+  ],
+  "dependencies": {    
+    "async": "0.2.5",
+    "underscore": "1.5.2"
+  },
+  "devDependencies": {
+    "mocha": "1.12.0",
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": ">=0.6.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gian788/mongoose.git"
+  }
+}
