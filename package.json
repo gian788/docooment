@@ -1,21 +1,45 @@
 {
-  "name": "kademy",
+  "name": "docooment",
+  "description": "DocumentDb ORM",
   "version": "0.0.0",
-  "main": "server/app.js",
+  "main": "index.js",
   "dependencies": {
-    "async": "^0.9.0",    
-    "connect-mongo": "^0.4.1", 
+    "async": "^0.9.0",
+    "connect-mongo": "^0.4.1",
     "documentdb": "^0.9.1",
-    "doqmentdb": "0.0.2",  
-    "mongoose": "~3.8.8",
-    "mongoose-schema-extend": "^0.1.7",   
     "underscore": "^1.7.0"
-  },  
+  },
   "engines": {
     "node": ">=0.10.0"
   },
-  "scripts": {
-    "start": "node server/app.js"
+  "private": true,
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gian788/docooment.git"
+  },  
+  "author": {
+    "name": "Gianluca Pengo",
+    "email": "gianluca.pengo@gmail.com"
   },
-  "private": true
+  "keywords": [
+    "DocumentDb",
+    "document",
+    "model",
+    "schema",
+    "database",
+    "odm",
+    "data",
+    "datastore",
+    "query",
+    "nosql",
+    "orm",
+    "db",
+    "azure"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gian788/docooment/issues"
+  },
+  "homepage": "https://github.com/gian788/docooment"
 }
