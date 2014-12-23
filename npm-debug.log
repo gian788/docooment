@@ -1,26 +1,99 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'version', 'minor' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
 4 verbose node symlink /usr/bin/node
-5 error Error: Git working directory not clean.
-5 error D lib/doc/index.js
-5 error D lib/doc/lib/connection.js
-5 error D lib/doc/package.json
-5 error M package.json
-5 error     at /usr/lib/node_modules/npm/lib/version.js:91:33
-5 error     at ChildProcess.exithandler (child_process.js:646:7)
-5 error     at ChildProcess.emit (events.js:98:17)
-5 error     at maybeClose (child_process.js:756:16)
-5 error     at Socket.<anonymous> (child_process.js:969:11)
-5 error     at Socket.emit (events.js:95:17)
-5 error     at Pipe.close (net.js:465:12)
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Linux 3.13.0-43-generic
-8 error command "/usr/bin/node" "/usr/bin/npm" "version" "minor"
-9 error cwd /srv/test_node/docDb
-10 error node -v v0.10.33
-11 error npm -v 1.4.28
-12 verbose exit [ 1, true ]
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/gian/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/gian/.npm/docooment/0.1.0/package.tgz', '.' ]
+12 verbose tarball /home/gian/.npm/docooment/0.1.0/package.tgz
+13 verbose folder .
+14 info prepublish docooment@0.1.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/gian/.npm/1f1177db-tar.lock
+17 silly lockFile 3aa3758e--npm-docooment-0-1-0-package-tgz tar:///home/gian/.npm/docooment/0.1.0/package.tgz
+18 verbose lock tar:///home/gian/.npm/docooment/0.1.0/package.tgz /home/gian/.npm/3aa3758e--npm-docooment-0-1-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 3aa3758e--npm-docooment-0-1-0-package-tgz tar:///home/gian/.npm/docooment/0.1.0/package.tgz
+22 silly lockFile 3aa3758e--npm-docooment-0-1-0-package-tgz tar:///home/gian/.npm/docooment/0.1.0/package.tgz
+23 silly lockFile 5dc684b1-gian-npm-docooment-0-1-0-package /home/gian/.npm/docooment/0.1.0/package
+24 verbose lock /home/gian/.npm/docooment/0.1.0/package /home/gian/.npm/5dc684b1-gian-npm-docooment-0-1-0-package.lock
+25 silly lockFile 5dc684b1-gian-npm-docooment-0-1-0-package /home/gian/.npm/docooment/0.1.0/package
+26 silly lockFile 5dc684b1-gian-npm-docooment-0-1-0-package /home/gian/.npm/docooment/0.1.0/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'docooment',
+29 silly publish   description: 'DocumentDb ORM',
+29 silly publish   version: '0.1.0',
+29 silly publish   main: 'index.js',
+29 silly publish   dependencies:
+29 silly publish    { async: '^0.9.0',
+29 silly publish      'connect-mongo': '^0.4.1',
+29 silly publish      documentdb: '^0.9.1',
+29 silly publish      underscore: '^1.7.0' },
+29 silly publish   engines: { node: '>=0.10.0' },
+29 silly publish   private: true,
+29 silly publish   devDependencies: {},
+29 silly publish   repository: { type: 'git', url: 'https://github.com/gian788/docooment.git' },
+29 silly publish   author: { name: 'Gianluca Pengo', email: 'gianluca.pengo@gmail.com' },
+29 silly publish   keywords:
+29 silly publish    [ 'DocumentDb',
+29 silly publish      'document',
+29 silly publish      'model',
+29 silly publish      'schema',
+29 silly publish      'database',
+29 silly publish      'odm',
+29 silly publish      'data',
+29 silly publish      'datastore',
+29 silly publish      'query',
+29 silly publish      'nosql',
+29 silly publish      'orm',
+29 silly publish      'db',
+29 silly publish      'azure' ],
+29 silly publish   license: 'MIT',
+29 silly publish   bugs: { url: 'https://github.com/gian788/docooment/issues' },
+29 silly publish   homepage: 'https://github.com/gian788/docooment',
+29 silly publish   readme: 'docooment\n=========\n\nA Azure DocoomentDB ORM\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: 'a43cfe7fc2d9289f221b5884f62582e6cb6a24ac',
+29 silly publish   _id: 'docooment@0.1.0',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: '1654dbc89392ac8209061d5681a09b151b2f081f',
+29 silly publish   _from: '.' }
+30 error Error: This package has been marked as private
+30 error Remove the 'private' field from the package.json to publish it.
+30 error     at publish_ (/usr/lib/node_modules/npm/lib/publish.js:91:31)
+30 error     at Array.1 (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+30 error     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+30 error     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+30 error     at chain (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+30 error     at /usr/lib/node_modules/npm/lib/publish.js:57:5
+30 error     at /usr/lib/node_modules/npm/node_modules/inflight/inflight.js:22:7
+30 error     at Array.forEach (native)
+30 error     at res (/usr/lib/node_modules/npm/node_modules/inflight/inflight.js:21:9)
+30 error     at f (/usr/lib/node_modules/npm/node_modules/once/once.js:16:25)
+31 error If you need help, you may report this *entire* log,
+31 error including the npm and node versions, at:
+31 error     <http://github.com/npm/npm/issues>
+32 error System Linux 3.13.0-43-generic
+33 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+34 error cwd /srv/test_node/docDb
+35 error node -v v0.10.33
+36 error npm -v 1.4.28
+37 verbose exit [ 1, true ]

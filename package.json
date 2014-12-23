@@ -1,6 +1,6 @@
 {
   "name": "docooment",
-  "description": "DocumentDb ORM",
+  "description": "DocumentDB ORM",
   "version": "0.1.0",
   "main": "index.js",
   "dependencies": {
@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "private": true,
+  "private": false,
   "devDependencies": {},
   "repository": {
     "type": "git",
