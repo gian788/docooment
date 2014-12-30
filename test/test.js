@@ -23,9 +23,15 @@ docooment.connect('https://test-kademy.documents.azure.com', 443, 'test-kademy' 
 	  if (err) console.error(err)
 	  console.log('user', user);
 
-		User.find({firstName: 'Gianluca'}).limit(5).sort({id:1}).exec(function(err, results){
-			console.log(err, results)
-		})
+		User.find({firstName: 'Gianluca'}).limit(5).sort({id:1}).exec(function(err, users){
+			if(err) return console.error(err);
+			//console.log(users)
+
+			User.remove({_id: users[0]._id}, function(err, results){
+				if(err) console.error(err);
+				console.log('deleted', results);
+			});
+		});
 	});
 
 	/*User.create({firstName: 'Gianluca'}, function (err, user) {
