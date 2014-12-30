@@ -55,7 +55,8 @@ var readOrCreateCollection = function (database, callback) {
 };
 
 var listItems = function (collection, callback) {
-    client.queryDocuments(collection._self+'0', 'SELECT * FROM root r').toArray(function (err, docs) {
+    console.log(collection._self+'0')
+    client.queryDocuments(collection._self, 'SELECT * FROM root r').toArray(function (err, docs) {
         if (err) {
             console.log(err)
         }
@@ -70,7 +71,7 @@ var listItems = function (collection, callback) {
 
 
 
-/*
+
 readOrCreateDatabase(function (database) {
 	console.log(database)
 
@@ -78,15 +79,34 @@ readOrCreateDatabase(function (database) {
 		console.log(collection)
 		//console.log(collection.indexingPolicy)
 
-		listItems(collection, function(docs){
-			console.log(docs)
-		})
-	});
-});*/
+		//listItems(collection, function(docs){
+		//	console.log(docs)
 
-client.queryDatabases('SELECT * FROM root r').toArray(function (err, results) {
+            var fn = function(val){
+                return val > 10;
+            }
+
+            var udf = {
+                id: 'test',
+                //userDefinedFunctionType: '',
+                serverScript: fn,
+            };
+            //client.createUserDefinedFunction(collection._self, udf, options, function(err, result){
+                //console.log(err, result);
+                
+                //client.readUserDefinedFunctions(collection._self, function(err, results){
+                client.readUserDefinedFunctions(collection._self).toArray(function(err, results){                    
+                    console.log('ok')
+                    console.log(err, results);
+                })
+            //});
+		//})
+	});
+});
+
+/*client.queryDatabases('SELECT * FROM root r').toArray(function (err, results) {
     if (err) {
         console.log(err)
     }
     console.log(results)
-});
+});*/
