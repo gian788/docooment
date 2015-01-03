@@ -1,7 +1,7 @@
 {
   "name": "docooment",
   "description": "A Mongoose like Azure DocuomentDB ORM.",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "main": "index.js",
   "dependencies": {
     "async": "^0.9.0",
