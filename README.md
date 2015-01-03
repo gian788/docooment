@@ -246,7 +246,7 @@ new Schema({
 
 ## License
 
-Copyright (c) 2015 DigitalRocker srl &lt;dev@digitalrockers.it&gt;
+Copyright (c) 2015 DigitalRockers srl &lt;dev@digitalrockers.it&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
