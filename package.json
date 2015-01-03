@@ -1,6 +1,6 @@
 {
   "name": "docooment",
-  "description": "DocumentDB ORM",
+  "description": "A Mongoose like Azure DocuomentDB ORM.",
   "version": "0.5.2",
   "main": "index.js",
   "dependencies": {
@@ -48,11 +48,5 @@
     "url": "https://github.com/gian788/docooment/issues"
   },
   "homepage": "https://github.com/gian788/docooment",
-  "readme": "docooment\n=========\n\nA Azure DocoomentDB ORM\n",
   "readmeFilename": "README.md",
-  "gitHead": "d4aa1d45ae78f5c3e335d1f127c8896e96b993f6",
-  "_id": "docooment@0.4.3",
-  "scripts": {},
-  "_shasum": "3b1b1b46e0dc963c7ead6451312f9061ac7a1a09",
-  "_from": "docooment@"
 }
