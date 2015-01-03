@@ -3,6 +3,8 @@ Docooment
 
 A [Mongoose](https://github.com/LearnBoost/mongoose) like [Azure DocuomentDB](http://azure.microsoft.com/it-it/services/documentdb/) ORM based on [Microsoft Azure DocumentDB Node.js SDK](https://github.com/Azure/azure-documentdb-node).
 
+[![Build Status](https://travis-ci.org/gian788/docooment.png?branch=master)](https://travis-ci.org/LearnBoost/mongoose)
+
 ## Plugins
 
 Docooment is compatibile with most of mongoose plugins. Check out the [plugins search site](http://plugins.mongoosejs.com/) to see hundreds of related modules from the community.
