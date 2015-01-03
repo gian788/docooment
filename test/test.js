@@ -1,8 +1,9 @@
-var docooment = require('../index'),
+var config = require('./config')
+	docooment = require('../index'),
 	Schema = docooment.Schema;
+a
 
-
-docooment.connect('https://test-kademy.documents.azure.com', 443, 'kademy' , {masterKey: 'hSui6X08mjlXQnTzsvUfLHIV56+OdNemziePwc/iqljXvRRGdLUOz2DZIye1ZB1/fv1PAargsR7UElTg7sJD8A=='}, function(err){
+docooment.connect(config.uri, config.port, config.database , config.options, function(err){
 	if(err) return console.error(err);
 	docooment.set('debug', true)
 
