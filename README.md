@@ -24,7 +24,7 @@ var docooment = require('docooment');
 docooment.connect('https://your-db-account.documents.azure.com', 443, 'yourDatabase' , {masterKey: 'yourMasterKey'});
 ```
 
-**Important!** This documentantion is from Mongoose docs
+**Important!** This documentantion is from [Mongoose](https://github.com/LearnBoost/mongoose) docs
 
 ### Defining a Model
 
