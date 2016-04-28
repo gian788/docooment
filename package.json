@@ -6,7 +6,7 @@
   "dependencies": {
     "async": "^0.9.0",
     "bson": "^0.2.16",
-    "documentdb": "^0.9.1",
+    "documentdb": "^1.7.0",
     "hooks": "^0.3.2",
     "sliced": "0.0.5",
     "underscore": "^1.7.0",
